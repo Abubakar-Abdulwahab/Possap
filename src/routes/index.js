@@ -30,7 +30,7 @@ export default function Router() {
     {
       path: '/',
       element: (
-        <Navigate to="/dashboard" />
+        <Navigate to="/index" />
 
       ),
       
@@ -103,12 +103,19 @@ export default function Router() {
         { path: '*', element: <Navigate to="/404" replace /> }
       ]
     },
-    { path: '*', element: <Navigate to="/404" replace /> }
+    { path: '*', element: <Navigate to="/404" replace /> },
+    { path: 'index', element: <Landing /> },
+    { path: 'about', element: <About /> },
+    { path: 'contact', element: <Contact /> },
+    
   ]);
 }
 
 // IMPORT COMPONENTS
-
+// Landing Pages
+const Landing = Loadable(lazy(() => import('../pages/Landing/Landing')))
+const About = Loadable(lazy(() => import('../pages/Landing/Landing')))
+const Contact = Loadable(lazy(() => import('../pages/Landing/Landing')))
 // Main Dashboard
 const Main = Loadable(lazy(() => import('../pages/main')))
 // Authentication
