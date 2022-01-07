@@ -1,14 +1,15 @@
-a{
+a {
   text-decoration: none !important;
 }
-.btn-main, .btn:hover{
-  background: #2F4CB0 !important;
+.btn-main,
+.btn:hover {
+  background: #2f4cb0 !important;
   color: #fff;
 }
 
 .pcoded-submenu-slider {
-	overflow-y: hidden;
-	max-height: 500px; /* approximate max height */
+  overflow-y: hidden;
+  max-height: 500px; /* approximate max height */
   display: block !important;
   -webkit-transition: all 2s linear 0s;
   transition: all 2s linear 0s;
@@ -16,14 +17,15 @@ a{
 
 .pcoded-submenu-closed {
   display: none !important;
-	max-height: 0;
+  max-height: 0;
 }
-.pcoded-hasmenu, .nav-item{
+.pcoded-hasmenu,
+.nav-item {
   cursor: pointer;
 }
 @font-face {
   font-family: Apercu;
-  src: url('./assets/fonts/FontsFree-Net-ApercuRegular.ttf');
+  src: url("./assets/fonts/FontsFree-Net-ApercuRegular.ttf");
 }
 
 :root {
@@ -133,10 +135,10 @@ body {
 .hero__secondary_btn:hover {
   color: #fff;
 }
-/* .slide1 {
-  background: url(./images/LiousEdetHouse1.png) !important;
+.slide1 {
+  background: url(./assets/images/LiousEdetHouse1.png) !important;
 }
-.slide2 {
+/* .slide2 {
   background: url(./images/airwing2.png) !important;
 }
 .slide3 {
@@ -151,6 +153,7 @@ body {
 .slide6 {
   background: url(./images/policeExtract4.png) !important;
 } */
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -375,7 +378,7 @@ body {
 .about__hero_bg {
   min-height: 350px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('./assets/images/cap.jpg');
+    url("./assets/images/cap.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;
