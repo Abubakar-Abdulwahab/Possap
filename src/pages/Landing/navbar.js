@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/images/PossapLogo.svg";
 
 const NavBar = () => {
   return (
@@ -10,7 +11,7 @@ const NavBar = () => {
           <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="/index.html">
-                <img src="./images/PossapLogo.svg" alt="logo" class="logo" />
+                <img src={Logo} alt="logo" class="logo" />
               </a>
               <button
                 class="navbar-toggler"
@@ -30,17 +31,17 @@ const NavBar = () => {
                 <ul class="navbar-nav   mr-2  ">
                   <li class="nav-item">
                     <a href="#" class="nav-link ">
-                      <Link to="/">Request Service</Link>
+                      Request Service
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="/about" class="nav-link ">
-                      <Link to="/">About</Link>
+                      About
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="/contact" class="nav-link active">
-                      <Link to="/contact">Contact</Link>
+                      Contact
                     </a>
                   </li>
 

@@ -2,6 +2,9 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import NavBar from "../Landing/navbar";
 import Footer from "../Landing/footer";
+import popo from "../../assets/images/popo.jpg";
+import questiontwo from "../../assets/images/questionTwo.svg";
+import questionOne from "../../assets/images/questionOne.svg";
 
 const About = () => {
   return (
@@ -21,11 +24,7 @@ const About = () => {
           <div class="container">
             <div class="row">
               <div class="col-md-6">
-                <img
-                  src="./images/popo.jpg"
-                  alt=""
-                  class="about__history_img"
-                />
+                <img src={popo} alt="" class="about__history_img" />
               </div>
               <div class="col-md-6">
                 <div class="history__content">
@@ -160,38 +159,38 @@ const About = () => {
                       {" "}
                       Police Information Services
                     </p>
-                    <ul>
+                    {/* <ul>
                       <li>Police Extract</li>
                       <li>Police Character Clearance Certificate</li>
                       <li>Police Investigation Report</li>
-                    </ul>
+                    </ul> */}
                   </div>
                   <div class="col-md-6">
                     <span class="objectives_nr">04</span>
                     <p class="services__paragraph"> Contractor Registration</p>
-                    <ul>
+                    {/* <ul>
                       <li>Contractor Registration</li>
                       <li>Renewal of Contractor Registration</li>
-                    </ul>
+                    </ul> */}
                     <span class="objectives_nr">05</span>
                     <p class="services__paragraph">
                       {" "}
                       International Driving Permit
                     </p>
-                    <ul>
+                    {/* <ul>
                       <li>International Driving Permit</li>
                       <li>International Vehicle Certification</li>
-                    </ul>
+                    </ul> */}
                     <span class="objectives_nr">06</span>
                     <p class="services__paragraph"> Other Services</p>
-                    <ul>
+                    {/* <ul>
                       <li>Tint Permit</li>
                       <li>Electronic Central Motor Registry</li>
                       <li>Use of Uniforms, Accoutrement and Fire Arms</li>
                       <li>Allocation of Spy Plate Numbers</li>
                       <li>Permit to Import/Sell and Use Fireworks</li>
                       <li>Police Clearance for DPR Approval</li>
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
               </div>
@@ -206,7 +205,7 @@ const About = () => {
                 <h2 class="help__title ">Need help with getting started?</h2>
                 <div class="row">
                   <div class="col-md-4">
-                    <img src="./images/questionTwo.svg" alt="question one" />
+                    <img src={questiontwo} alt="question one" />
                   </div>
                   <div class="col-md-4">
                     <p>
@@ -216,7 +215,7 @@ const About = () => {
                     </p>
                   </div>
                   <div class="col-md-4">
-                    <img src="./images/questionOne.svg" alt="question two" />
+                    <img src={questionOne} alt="question two" />
                   </div>
                 </div>
                 <div class="benefits__btn_container">
