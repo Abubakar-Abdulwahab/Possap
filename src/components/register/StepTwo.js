@@ -10,28 +10,51 @@ import { PATH_AUTH } from "../../routes/paths";
 import useAuth from "../../hooks/useAuth";
 import useIsMountedRef from "../../hooks/useIsMountedRef";
 import LogoOnlyLayout from "../../Layouts/LogoOnlyLayout";
+import TextField from "./TextField";
 //
 
 // ----------------------------------------------------------------------
-
-export default function LoginForm() {
+const initialValues =  {
+    fullName: "",
+    email: "",
+    phone: "",
+    gender: "",
+    state: "",
+    lga: "",
+    address: "",
+    password: "",
+    confirmPassword: "",
+  }
+export default function StepTwo() {
   const { login } = useAuth();
   const isMountedRef = useIsMountedRef();
   // const { enqueueSnackbar, closeSnackbar } = useSnackbar();
   const [showPassword, setShowPassword] = useState(false);
 
   const LoginSchema = Yup.object().shape({
+    fullName: Yup.string().required("fullName is required"),
+    phone: Yup.string().required("gender is required"),
     email: Yup.string()
-      .email("Email must be a valid email address")
-      .required("Email is required"),
-    password: Yup.string().required("Password is required"),
+        .email("Email must be a valid email address")
+        .required("Email is required"),
+    gender: Yup.string().required("gender is required"),
+    state: Yup.string().required("state is required"),
+    lga: Yup.string().required("lga is required"),
+    address: Yup.string().required("address is required"),
+    password: Yup.string().required("password is required"),
   });
 
   const formik = useFormik({
     initialValues: {
+      fullName: "",
       email: "",
+      phone: "",
+      gender: "",
+      state: "",
+      lga: "",
+      address: "",
       password: "",
-      remember: true,
+      confirmPassword: "",
     },
     validationSchema: LoginSchema,
     onSubmit: async (values, { setErrors, setSubmitting, resetForm }) => {
@@ -80,57 +103,12 @@ export default function LoginForm() {
             <h3 className="mb-2 text-center">Welcome Back</h3>
             <p className="mb-2 text-center">Enter your credentials to continue</p>
             <div class="col-md-12 text-left mb-3">
-              <label for="validationCustom01" class="form-label text-left">
-                Email
-              </label>
-              <input
-                {...getFieldProps("email")}
-                className={ "form-control " +
-                  (touched.email && errors.email
-                    ? "is-invalid"
-                    : touched.email && !errors.email ? "is-valid" : "")
-                }
-                id="validationCustom01"
-              />
-               <ErrorMessage name="email" component="div" className="invalid-feedback" />
-              {touched.email && !errors.email && 
-              <div class="valid-feedback">Looks good!</div>
-              
-              }
+                {Object.keys(initialValues).map(val =>(
+                    <TextField val={val} getFieldProps={getFieldProps} touched={touched} errors={errors} ErrorMessage={ErrorMessage} />
+                ))}
             </div>
-
-            <div className="col-md-12 mb-4">
-              <input
-                {...getFieldProps("password")}
-                type="password"
-                id="emailInvalid"
-                className={ "form-control " +
-                (touched.password && errors.password
-                  ? "is-invalid"
-                  : touched.password && !errors.password ? "is-valid": "")
-              }
-      
-                placeholder="password"
-              />
-              <ErrorMessage name="password" component="div" className="invalid-feedback" />
-            </div>
-            <div className="d-grid gap-2">
-              <button loading={isSubmitting} className="btn btn-main mb-4">
-                Login
-              </button>
-            </div>
-            <p className="mb-2 text-muted">
-              Forgot password?{" "}
-              <Link component={RouterLink} to="/auth/forgot-password">
-                Reset
-              </Link>
-            </p>
-            <p className="mb-0 text-muted">
-              Don’t have an account?{" "}
-              <Link component={RouterLink} to="/auth/register">
-                Signup
-              </Link>
-            </p>
+          
+         
           </div>
         </div>
       </Form>

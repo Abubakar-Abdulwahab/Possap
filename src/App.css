@@ -2,7 +2,7 @@ a{
   text-decoration: none !important;
 }
 .btn-main, .btn:hover{
-  background: #2F4CB0 !important;
+  background: #0e2160 !important;
   color: #fff;
 }
 
@@ -69,7 +69,7 @@ body {
   padding: 1em 2.5em;
   border: none;
   outline: black;
-  background: #2f4cb0;
+  background: #0e2160;
   color: #fff;
   display: inline-block;
   border-radius: 4px;
@@ -262,7 +262,7 @@ body {
 .reasons__get_started {
   font-size: 1rem;
   line-height: 24px;
-  color: #2f4cb0;
+  color: #0e2160;
   font-weight: 400;
   text-decoration: none;
 }
