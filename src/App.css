@@ -63,6 +63,9 @@ body {
   z-index: 10;
   background: #fff;
 }
+#nav-bar .navbar-brand {
+  background: #fff;
+}
 .logo {
   width: 60px;
 }
@@ -124,6 +127,7 @@ body {
 }
 .hero__primary_btn:hover {
   color: var(--darker-primary-color);
+  background: #fff !important;
 }
 .hero__secondary_btn {
   text-decoration: none;
@@ -138,21 +142,21 @@ body {
 .slide1 {
   background: url(./assets/images/LiousEdetHouse1.png) !important;
 }
-/* .slide2 {
-  background: url(./images/airwing2.png) !important;
+.slide2 {
+  background: url(./assets/images/airwing2.png) !important;
 }
 .slide3 {
-  background: url(./images/characterCertificate5.png) !important;
-} */
-/* .slide4 {
-  background: url(./images/investigationReport6.png) !important;
+  background: url(./assets/images/characterCertificate5.png) !important;
+}
+.slide4 {
+  background: url(./assets/images/investigationReport6.png) !important;
 }
 .slide5 {
-  background: url(./images/policecar3.png) !important;
+  background: url(./assets/images/policecar3.png) !important;
 }
 .slide6 {
-  background: url(./images/policeExtract4.png) !important;
-} */
+  background: url(./assets/images/policeExtract4.png) !important;
+}
 
 .swiper {
   width: 100%;
@@ -233,6 +237,7 @@ body {
 #reasons {
   line-height: 24px;
   padding: 80px 0px;
+  background: #fff;
 }
 .reasons__img {
   width: 100%;
@@ -322,6 +327,7 @@ body {
   color: #212529;
   line-height: 24px;
   padding: 80px 0px;
+  background: #fff;
 }
 .help__title {
   text-align: center;
