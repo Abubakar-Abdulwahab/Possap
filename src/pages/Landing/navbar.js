@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -29,17 +30,17 @@ const NavBar = () => {
                 <ul class="navbar-nav   mr-2  ">
                   <li class="nav-item">
                     <a href="#" class="nav-link ">
-                      Request Service
+                      <Link to="/">Request Service</Link>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/about.html" class="nav-link ">
-                      About
+                    <a href="/about" class="nav-link ">
+                      <Link to="/">About</Link>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/contact.html" class="nav-link active">
-                      Contact
+                    <a href="/contact" class="nav-link active">
+                      <Link to="/contact">Contact</Link>
                     </a>
                   </li>
 
