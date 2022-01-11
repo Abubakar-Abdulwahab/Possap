@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import AnalyticsActivitiesTable from '../components/dashboard/analytics/AnalyticsActivitiesTable'
 import AnalyticsRequestStatus from '../components/dashboard/analytics/AnalyticsRequestStatus'
@@ -31,3 +32,22 @@ const MainDashboard = () => {
 
 export default MainDashboard
 
+=======
+import React from "react";
+import IntroCards from "../components/dashboard/intro-card";
+import Sample from "../Sample";
+
+const MainDashboard = () => {
+  return (
+    <>
+      <div class="col-md-12">
+        <h4>Hi, Welcome back</h4>
+      </div>
+      <IntroCards />
+      <Sample />
+    </>
+  );
+};
+
+export default MainDashboard;
+>>>>>>> fdaf4b47e67bd6c55206d7389609d4656ffc0428
