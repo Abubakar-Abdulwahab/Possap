@@ -6,7 +6,7 @@ import Logo from "../../assets/images/PossapLogo.svg";
 const NavBar = () => {
   return (
     <div>
-      <section id="nav-bar">
+      <section id="nav-bar" activeClassName="active">
         <header>
           <nav className="navbar navbar-expand-md navbar-light">
             <div className="container-fluid">
@@ -31,17 +31,17 @@ const NavBar = () => {
                 <ul className="navbar-nav   mr-2  ">
                   <li className="nav-item">
                     <a href="#" className="nav-link ">
-                      <Link to="/">Request Service</Link>
+                      Request Service
                     </a>
                   </li>
                   <li className="nav-item">
                     <a href="/about" className="nav-link ">
-                      <Link to="/">About</Link>
+                      About
                     </a>
                   </li>
                   <li className="nav-item">
                     <a href="/contact" className="nav-link active">
-                      <Link to="/contact">Contact</Link>
+                      Contact
                     </a>
                   </li>
 
