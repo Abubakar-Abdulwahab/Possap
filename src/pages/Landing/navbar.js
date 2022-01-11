@@ -6,7 +6,7 @@ import Logo from "../../assets/images/PossapLogo.svg";
 const NavBar = () => {
   return (
     <div>
-      <section id="nav-bar">
+      <section id="nav-bar" activeClassName="active">
         <header>
           <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
