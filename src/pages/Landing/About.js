@@ -12,8 +12,8 @@ const About = () => {
       <div>
         <NavBar />
         <section id="about__hero">
-          <div class="about__hero_bg">
-            <div class="about__content">
+          <div className="about__hero_bg">
+            <div className="about__content">
               <p>Everything you need to know</p>
               <h2>About POSSAP</h2>
             </div>
@@ -21,13 +21,13 @@ const About = () => {
         </section>
 
         <section id="about__history">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <img src={popo} alt="" class="about__history_img" />
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6">
+                <img src={popo} alt="" className="about__history_img" />
               </div>
-              <div class="col-md-6">
-                <div class="history__content">
+              <div className="col-md-6">
+                <div className="history__content">
                   <h2>HISTORY OF THE NIGERIA POLICE FORCE</h2>
                   <p>
                     The Nigeria Police Force (NPF) is the principal law
@@ -57,9 +57,9 @@ const About = () => {
         </section>
 
         <section id="about__possap">
-          <div class="container">
-            <div class="row">
-              <div class="possap__content">
+          <div className="container">
+            <div className="row">
+              <div className="possap__content">
                 <h2>POLICE SPECIALIZED SERVICES AUTOMATION PROJECT (POSSAP)</h2>
                 <p>
                   An Initiative launched by the Nigeria Police Force (NPF) for
@@ -76,20 +76,20 @@ const About = () => {
         </section>
 
         <section id="about__objectives">
-          <div class="container">
-            <div class="row">
-              <div class="objectives__content">
+          <div className="container">
+            <div className="row">
+              <div className="objectives__content">
                 <h2>Objectives</h2>
-                <div class="row">
-                  <div class="col-md-6">
-                    <span class="objectives_nr">01</span>
+                <div className="row">
+                  <div className="col-md-6">
+                    <span className="objectives_nr">01</span>
                     <p>
                       {" "}
                       To improve efficiency in the process and administration of
                       all fee-based specialized services provided by the Nigeria
                       Police Force;
                     </p>
-                    <span class="objectives_nr">02</span>
+                    <span className="objectives_nr">02</span>
                     <p>
                       {" "}
                       To enhance the general working conditions of officers and
@@ -97,15 +97,15 @@ const About = () => {
                       the Nigeria Police Force;
                     </p>
                   </div>
-                  <div class="col-md-6">
-                    <span class="objectives_nr">03</span>
+                  <div className="col-md-6">
+                    <span className="objectives_nr">03</span>
                     <p>
                       {" "}
                       To reposition the Nigeria Police for improved service
                       delivery in meeting its statutory and other non-core
                       obligations;
                     </p>
-                    <span class="objectives_nr">04</span>
+                    <span className="objectives_nr">04</span>
                     <p>
                       {" "}
                       To act as a catalyst for transformation of Police
@@ -120,9 +120,9 @@ const About = () => {
         </section>
 
         <section id="services">
-          <div class="container">
-            <div class="row">
-              <div class="services__content">
+          <div className="container">
+            <div className="row">
+              <div className="services__content">
                 <h2> POLICE SPECIALIZED SERVICES</h2>
                 <p>
                   With respect to extant and relevant laws, the Police Force
@@ -142,20 +142,20 @@ const About = () => {
                   Permit, Police Extract & Information Services, other permits &
                   reports services provided pursuant to the Force Order.
                 </p>
-                <div class="row">
-                  <div class="col-md-6">
-                    <span class="objectives_nr">01</span>
-                    <p class="services__paragraph">
+                <div className="row">
+                  <div className="col-md-6">
+                    <span className="objectives_nr">01</span>
+                    <p className="services__paragraph">
                       {" "}
                       Guards and Special Protection Services
                     </p>
-                    <span class="objectives_nr">02</span>
-                    <p class="services__paragraph"> Arms and Ammunition</p>
+                    <span className="objectives_nr">02</span>
+                    <p className="services__paragraph"> Arms and Ammunition</p>
                     <ul>
                       <li>Issuance of Fire Arm and License</li>
                     </ul>
-                    <span class="objectives_nr">03</span>
-                    <p class="services__paragraph">
+                    <span className="objectives_nr">03</span>
+                    <p className="services__paragraph">
                       {" "}
                       Police Information Services
                     </p>
@@ -165,15 +165,18 @@ const About = () => {
                       <li>Police Investigation Report</li>
                     </ul> */}
                   </div>
-                  <div class="col-md-6">
-                    <span class="objectives_nr">04</span>
-                    <p class="services__paragraph"> Contractor Registration</p>
+                  <div className="col-md-6">
+                    <span className="objectives_nr">04</span>
+                    <p className="services__paragraph">
+                      {" "}
+                      Contractor Registration
+                    </p>
                     {/* <ul>
                       <li>Contractor Registration</li>
                       <li>Renewal of Contractor Registration</li>
                     </ul> */}
-                    <span class="objectives_nr">05</span>
-                    <p class="services__paragraph">
+                    <span className="objectives_nr">05</span>
+                    <p className="services__paragraph">
                       {" "}
                       International Driving Permit
                     </p>
@@ -181,8 +184,8 @@ const About = () => {
                       <li>International Driving Permit</li>
                       <li>International Vehicle Certification</li>
                     </ul> */}
-                    <span class="objectives_nr">06</span>
-                    <p class="services__paragraph"> Other Services</p>
+                    <span className="objectives_nr">06</span>
+                    <p className="services__paragraph"> Other Services</p>
                     {/* <ul>
                       <li>Tint Permit</li>
                       <li>Electronic Central Motor Registry</li>
@@ -199,27 +202,29 @@ const About = () => {
         </section>
 
         <section id="help">
-          <div class="container">
-            <div class="row">
-              <div class="help__content">
-                <h2 class="help__title ">Need help with getting started?</h2>
-                <div class="row">
-                  <div class="col-md-4">
+          <div className="container">
+            <div className="row">
+              <div className="help__content">
+                <h2 className="help__title ">
+                  Need help with getting started?
+                </h2>
+                <div className="row">
+                  <div className="col-md-4">
                     <img src={questiontwo} alt="question one" />
                   </div>
-                  <div class="col-md-4">
+                  <div className="col-md-4">
                     <p>
                       We understand that you might have questions about the
                       process of making a request and possible complaints. Feel
                       free to reach out to us
                     </p>
                   </div>
-                  <div class="col-md-4">
+                  <div className="col-md-4">
                     <img src={questionOne} alt="question two" />
                   </div>
                 </div>
-                <div class="benefits__btn_container">
-                  <a href="#" role="button" class="btn  benefits__btn">
+                <div className="benefits__btn_container">
+                  <a href="#" role="button" className="btn  benefits__btn">
                     Contact Us
                   </a>
                 </div>
