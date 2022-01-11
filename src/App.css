@@ -1,14 +1,15 @@
-a{
+a {
   text-decoration: none !important;
 }
-.btn-main, .btn:hover{
-  background: #2F4CB0 !important;
+.btn-main,
+.btn:hover {
+  background: #2f4cb0 !important;
   color: #fff;
 }
 
 .pcoded-submenu-slider {
-	overflow-y: hidden;
-	max-height: 500px; /* approximate max height */
+  overflow-y: hidden;
+  max-height: 500px; /* approximate max height */
   display: block !important;
   -webkit-transition: all 2s linear 0s;
   transition: all 2s linear 0s;
@@ -16,14 +17,15 @@ a{
 
 .pcoded-submenu-closed {
   display: none !important;
-	max-height: 0;
+  max-height: 0;
 }
-.pcoded-hasmenu, .nav-item{
+.pcoded-hasmenu,
+.nav-item {
   cursor: pointer;
 }
 @font-face {
   font-family: Apercu;
-  src: url('./assets/fonts/FontsFree-Net-ApercuRegular.ttf');
+  src: url("./assets/fonts/FontsFree-Net-ApercuRegular.ttf");
 }
 
 :root {
@@ -59,6 +61,9 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
+  background: #fff;
+}
+#nav-bar .navbar-brand {
   background: #fff;
 }
 .logo {
@@ -122,6 +127,7 @@ body {
 }
 .hero__primary_btn:hover {
   color: var(--darker-primary-color);
+  background: #fff !important;
 }
 .hero__secondary_btn {
   text-decoration: none;
@@ -133,24 +139,25 @@ body {
 .hero__secondary_btn:hover {
   color: #fff;
 }
-/* .slide1 {
-  background: url(./images/LiousEdetHouse1.png) !important;
+.slide1 {
+  background: url(./assets/images/LiousEdetHouse1.png) !important;
 }
 .slide2 {
-  background: url(./images/airwing2.png) !important;
+  background: url(./assets/images/airwing2.png) !important;
 }
 .slide3 {
-  background: url(./images/characterCertificate5.png) !important;
-} */
-/* .slide4 {
-  background: url(./images/investigationReport6.png) !important;
+  background: url(./assets/images/characterCertificate5.png) !important;
+}
+.slide4 {
+  background: url(./assets/images/investigationReport6.png) !important;
 }
 .slide5 {
-  background: url(./images/policecar3.png) !important;
+  background: url(./assets/images/policecar3.png) !important;
 }
 .slide6 {
-  background: url(./images/policeExtract4.png) !important;
-} */
+  background: url(./assets/images/policeExtract4.png) !important;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -230,6 +237,7 @@ body {
 #reasons {
   line-height: 24px;
   padding: 80px 0px;
+  background: #fff;
 }
 .reasons__img {
   width: 100%;
@@ -319,6 +327,7 @@ body {
   color: #212529;
   line-height: 24px;
   padding: 80px 0px;
+  background: #fff;
 }
 .help__title {
   text-align: center;
@@ -375,7 +384,7 @@ body {
 .about__hero_bg {
   min-height: 350px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('./assets/images/cap.jpg');
+    url("./assets/images/cap.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;

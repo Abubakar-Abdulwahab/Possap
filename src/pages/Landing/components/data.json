@@ -1,0 +1,43 @@
+[
+    {
+        "id":"1",
+        "title":"Welcome to the Police Specialized Services Automation Project (POSSAP) Portal",
+        "subtitle":"You can pay for services or bills such as Special protection services, Guards service, Police extracts etc."
+
+    },
+    {
+        "id":"2",
+        "miniHeader":"You can request",
+        "title":"SPECIAL PROTECTION SERVICE",
+        "subtitle":"This service is primarily detailed for the protection of PEPs (Politically Exposed Person’s) as well as private citizens. The service is rendered by personnel of the Force’s Specialized Units, PMF, SPU and CTU."
+
+    },
+    {
+        "id":"3",
+        "miniHeader":"You can request",
+        "title":"GUARDS SERVICE",
+        "subtitle":"This service offers the services of Police officers to a wider range of the population as a whole. Guards Services allows the public and corporations such as Banks to request for Police protection of residential property, commercial property, events, and escort."
+
+    },
+    {
+        "id":"4",
+        "miniHeader":"You can request",
+        "title":"POLICE EXTRACT",
+        "subtitle":"A Police Extract is a document usually done for reports of lost or missing items or documents. This service allows the public as well as corporate bodies to request for a Police Extract Document."
+
+    },
+    {
+        "id":"5",
+        "miniHeader":"You can request",
+        "title":"POLICE CHARACTER CERTIFICATE",
+        "subtitle":"A Police Character Clearance is done to check whether an applicant has a criminal record. This service allows for the public to request for this document."
+
+    },
+    {
+        "id":"6",
+        "miniHeader":"You can request",
+        "title":"POLICE INVESTIGATION REPORT",
+        "subtitle":"An investigation report is a document issued at the end of an investigation into a criminal case. This service allows for the public to request for this document."
+
+    }
+]

@@ -8,13 +8,13 @@ const NavBar = () => {
     <div>
       <section id="nav-bar" activeClassName="active">
         <header>
-          <nav class="navbar navbar-expand-md navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/index.html">
-                <img src={Logo} alt="logo" class="logo" />
+          <nav className="navbar navbar-expand-md navbar-light">
+            <div className="container-fluid">
+              <a className="navbar-brand" href="/index.html">
+                <img src={Logo} alt="logo" className="logo" />
               </a>
               <button
-                class="navbar-toggler"
+                className="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse"
@@ -22,31 +22,31 @@ const NavBar = () => {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
               </button>
               <div
-                class="collapse navbar-collapse justify-content-end"
+                className="collapse navbar-collapse justify-content-end"
                 id="navbarCollapse"
               >
-                <ul class="navbar-nav   mr-2  ">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">
+                <ul className="navbar-nav   mr-2  ">
+                  <li className="nav-item">
+                    <a href="#" className="nav-link ">
                       Request Service
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a href="/about" class="nav-link ">
+                  <li className="nav-item">
+                    <a href="/about" className="nav-link ">
                       About
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a href="/contact" class="nav-link active">
+                  <li className="nav-item">
+                    <a href="/contact" className="nav-link active">
                       Contact
                     </a>
                   </li>
 
-                  <li class="nav-item ">
-                    <a class="nav_btn" role="button">
+                  <li className="nav-item ">
+                    <a className="nav_btn" role="button">
                       Login | Sign Up
                     </a>
                   </li>
