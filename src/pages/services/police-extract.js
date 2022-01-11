@@ -7,7 +7,7 @@ import ServiceCards from '../../components/services/serviceCards'
 import StatsCard from '../../components/services/statscard'
 
 const PoliceExtract = () => {
-    let arr = ['Daily Sales','Cost of Service','Number of Payments']
+    let arr = ['Total no of extracts','Pending Extracts','Total no of request']
     let services = ['Police Extract','Character Clearance','Guard & Escort']
     return (
         <>

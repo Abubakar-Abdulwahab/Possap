@@ -1,16 +1,19 @@
 import * as Yup from "yup";
-import { useState } from "react";
-// import { useSnackbar } from 'notistack5';
-import { Link, Link as RouterLink } from "react-router-dom";
+import { useState, useEffect } from "react";
+
 import { useFormik, Form, FormikProvider, ErrorMessage } from "formik";
 
-// routes
-import { PATH_AUTH } from "../../routes/paths";
+
 // hooks
 import useAuth from "../../hooks/useAuth";
 import useIsMountedRef from "../../hooks/useIsMountedRef";
 import LogoOnlyLayout from "../../Layouts/LogoOnlyLayout";
-import TextField from "./TextField";
+
+import { SignupSchema } from "../../FormSchema/SignupSchema";
+import TextField from "../FormElements/TextField";
+import SelectField from "../FormElements/SelectField";
+import StateLGA from "../FormElements/StateLGA";
+import TextareaField from "../FormElements/Textarea";
 //
 
 // ----------------------------------------------------------------------
@@ -30,7 +33,11 @@ export default function StepTwo() {
   const isMountedRef = useIsMountedRef();
   // const { enqueueSnackbar, closeSnackbar } = useSnackbar();
   const [showPassword, setShowPassword] = useState(false);
+ const [formSchema, setformSchema] = useState(SignupSchema)
 
+ useEffect(() => {
+   
+ }, [formSchema])
   const LoginSchema = Yup.object().shape({
     fullName: Yup.string().required("fullName is required"),
     phone: Yup.string().required("gender is required"),
@@ -50,12 +57,13 @@ export default function StepTwo() {
       email: "",
       phone: "",
       gender: "",
-      state: "",
+      state: "Abia",
       lga: "",
       address: "",
       password: "",
       confirmPassword: "",
     },
+    
     validationSchema: LoginSchema,
     onSubmit: async (values, { setErrors, setSubmitting, resetForm }) => {
       try {
@@ -82,7 +90,7 @@ export default function StepTwo() {
     },
   });
 
-  const { errors, touched, values, isSubmitting, handleSubmit, getFieldProps } =
+  const { errors, touched, values, setFieldValue, handleSubmit, getFieldProps } =
     formik;
 
   const handleShowPassword = () => {
@@ -90,27 +98,36 @@ export default function StepTwo() {
   };
 
   return (
-    <FormikProvider value={formik}>
-      <Form autoComplete="off" noValidate onSubmit={handleSubmit}>
-        <div className="card">
+    <FormikProvider  value={formik}>
+      <Form  autoComplete="off" noValidate onSubmit={handleSubmit}>
+       
           {errors.afterSubmit && (
             <div className="alert alert-danger">{errors.afterSubmit}</div>
           )}
-          <div className="card-body row">
-            <div className="mb-2 text-center">
-              <LogoOnlyLayout />
-            </div>
-            <h3 className="mb-2 text-center">Welcome Back</h3>
-            <p className="mb-2 text-center">Enter your credentials to continue</p>
-            <div class="col-md-12 text-left mb-3">
-                {Object.keys(initialValues).map(val =>(
-                    <TextField val={val} getFieldProps={getFieldProps} touched={touched} errors={errors} ErrorMessage={ErrorMessage} />
+           
+            <div class="row text-left mb-3">
+                {SignupSchema && SignupSchema.map(val =>(
+                    <>
+                    {val.type == 'text' &&
+                        <TextField key={val.name} val={val} getFieldProps={getFieldProps} touched={touched} errors={errors} ErrorMessage={ErrorMessage} />
+                    }
+                    {val.type == 'textarea' &&
+                        <TextareaField key={val.name} val={val} getFieldProps={getFieldProps} touched={touched} errors={errors} ErrorMessage={ErrorMessage} />
+                    }
+                    {(!['state','lga'].includes(val.name) && val.type === 'select') &&
+                         <SelectField values={values}  key={val.name} val={val} getFieldProps={getFieldProps} touched={touched} errors={errors} ErrorMessage={ErrorMessage} />
+                    }
+                    {['state', 'lga'].includes(val.name) &&
+                         <StateLGA setFieldValue={setFieldValue} values={values}  key={val.name} val={val} getFieldProps={getFieldProps} touched={touched} errors={errors} ErrorMessage={ErrorMessage} />
+                    }
+                    
+                    </>
                 ))}
             </div>
-          
+            <div class="row text-left mb-3">
+                <button name="" id="" class="btn btn-main" href="#" role="button">Create Account</button>
+            </div>
          
-          </div>
-        </div>
       </Form>
     </FormikProvider>
   );

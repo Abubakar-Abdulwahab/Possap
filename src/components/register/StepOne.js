@@ -24,7 +24,7 @@ const initialValues =  {
     password: "",
     confirmPassword: "",
   }
-export default function LoginForm() {
+export default function StepOne() {
     const { register } = useAuth();
     const isMountedRef = useIsMountedRef();
     const [selectedUserType, setselectedUserType] = useState(1)
@@ -104,25 +104,8 @@ export default function LoginForm() {
     return (
       <FormikProvider value={formik}>
         <Form autoComplete="off" noValidate onSubmit={handleSubmit}>
-          <div className="card text-left">
-            <div className="card-body">
-              <div className="mb-2 text-center">
-                <LogoOnlyLayout />
-              </div>
-              <h3 className="mb-2 text-center">Signup</h3>
-              <p className="mb-2 text-center">
-                Create an account to get started.
-              </p>
-              <Stepper
-                steps={[
-                  { label: "Step 1" },
-                  { label: "Step 2" },
-                  { label: "Step 3" },
-                ]}
-                activeStep={currentStep}
-                styleConfig={stepStyle}
-              />
-              <div id="my-radio-group">Who are you</div> 
+         
+        <div id="my-radio-group">Who are you</div> 
               <div class="form-check form-check-inline text-center">
                 <Field
                   class="form-check-input"
@@ -222,26 +205,8 @@ export default function LoginForm() {
                   Login
                 </button>
               </div> */}
-              <div className="d-flex justify-content-between">
-                {currentStep > 0 && (
-                  <a
-                    className="btn btn-main text-light"
-                    role="button"
-                    onClick={() => handleStep("prev")}
-                  >
-                    Prev
-                  </a>
-                )}
-                <a
-                  className="btn btn-main text-light text-right"
-                  role="button"
-                  onClick={() => handleStep("next")}
-                >
-                  Next
-                </a>
-              </div>
-            </div>
-          </div>
+          
+   
         </Form>
       </FormikProvider>
     );

@@ -1,19 +1,20 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/images/PossapLogo.svg";
 
 const NavBar = () => {
   return (
     <div>
       <section id="nav-bar">
         <header>
-          <nav class="navbar navbar-expand-md navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/index.html">
-                <img src="./images/PossapLogo.svg" alt="logo" class="logo" />
+          <nav className="navbar navbar-expand-md navbar-light">
+            <div className="container-fluid">
+              <a className="navbar-brand" href="/index.html">
+                <img src={Logo} alt="logo" className="logo" />
               </a>
               <button
-                class="navbar-toggler"
+                className="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse"
@@ -21,31 +22,48 @@ const NavBar = () => {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
               </button>
               <div
-                class="collapse navbar-collapse justify-content-end"
+                className="collapse navbar-collapse justify-content-end"
                 id="navbarCollapse"
               >
-                <ul class="navbar-nav   mr-2  ">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">
-                      <Link to="/">Request Service</Link>
-                    </a>
+                <ul className="navbar-nav   mr-2  ">
+                  <li className="nav-item">
+                    <NavLink
+                      to="/index"
+                      className={({ isActive }) =>
+                        isActive ? 'nav-link active' : 'nav-link'
+                      }
+                    >
+                      Request Service
+                    </NavLink>
+                   
                   </li>
-                  <li class="nav-item">
-                    <a href="/about" class="nav-link ">
-                      <Link to="/">About</Link>
-                    </a>
+                  <li className="nav-item">
+                  <NavLink
+                      to="/about"
+                      className={({ isActive }) =>
+                        isActive ? 'nav-link active' : 'nav-link'
+                      }
+                    >
+                      About
+                    </NavLink>
                   </li>
-                  <li class="nav-item">
-                    <a href="/contact" class="nav-link active">
-                      <Link to="/contact">Contact</Link>
-                    </a>
+                  <li className="nav-item">
+                  <NavLink
+                      to="/contact"
+                      className={({ isActive }) =>
+                        isActive ? 'nav-link active' : 'nav-link'
+                      }
+                    >
+                      Contact
+                  </NavLink>
+              
                   </li>
 
-                  <li class="nav-item ">
-                    <a class="nav_btn" role="button">
+                  <li className="nav-item ">
+                    <a className="nav_btn" role="button">
                       Login | Sign Up
                     </a>
                   </li>

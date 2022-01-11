@@ -271,7 +271,7 @@ p.text-muted {
 }
 .dropdown-menu.show:before {
   content: "\63";
-  font-family: "pct";
+  font-family: "Open Sans", sans-serif;
   position: absolute;
   left: 15px;
   top: -5px;
@@ -999,7 +999,7 @@ p.text-muted {
 }
 .possap-header .dropdown.show:before {
   content: "\63";
-  font-family: "pct";
+  font-family: "Open Sans", sans-serif;
   position: absolute;
   left: -5px;
   top: 60px;
@@ -1747,7 +1747,7 @@ p.text-muted {
   position: absolute;
   bottom: -34px;
   left: 0;
-  font-family: "pct";
+  font-family: "Open Sans", sans-serif;
   z-index: 1001;
   font-size: 50px;
   line-height: 1;
@@ -1831,7 +1831,7 @@ p.text-muted {
   position: absolute;
   top: 8px;
   left: -31px;
-  font-family: "pct";
+  font-family: "Open Sans", sans-serif;
   z-index: 1001;
   font-size: 50px;
   line-height: 1;
@@ -2276,7 +2276,7 @@ p.text-muted {
   font-size: 120px;
   position: absolute;
   right: -45px;
-  font-family: "pct";
+  font-family: "Open Sans", sans-serif;
   z-index: 1001;
   line-height: 0;
   color: #04a9f5;
@@ -7599,7 +7599,7 @@ a.btn-theme.active {
 .tooltip .arrow::before {
   content: "\6d";
   left: 0;
-  font-family: "pct";
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   line-height: 0.3;
   color: #000;
@@ -7661,7 +7661,7 @@ a.btn-theme.active {
   content: "\6d";
   top: -1px;
   left: 0;
-  font-family: "pct";
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   line-height: 0.3;
   color: #fff;
@@ -7856,7 +7856,7 @@ a.btn-theme.active {
 }
 .header-user-list.open .h-close-text:after {
   content: "\61";
-  font-family: "pct";
+  font-family: "Open Sans", sans-serif;
   z-index: 1001;
   font-size: 150px;
   line-height: 0;
@@ -8028,7 +8028,7 @@ a.btn-theme.active {
 }
 .header-chat .h-list-footer .input-group:after {
   content: "\67";
-  font-family: "pct";
+  font-family: "Open Sans", sans-serif;
   z-index: 1001;
   font-size: 35px;
   line-height: 0;
@@ -8087,7 +8087,7 @@ a.btn-theme.active {
 }
 .h-list-body .chat-messages .chat-menu-reply > div:before {
   content: "\66";
-  font-family: "pct";
+  font-family: "Open Sans", sans-serif;
   z-index: 5;
   font-size: 30px;
   line-height: 0;
@@ -8115,7 +8115,7 @@ a.btn-theme.active {
 }
 .h-list-body .chat-messages .chat-menu-content > div:before {
   content: "\68";
-  font-family: "pct";
+  font-family: "Open Sans", sans-serif;
   z-index: 1001;
   font-size: 30px;
   line-height: 0;

@@ -8,15 +8,20 @@ import useAuth from "../../hooks/useAuth";
 import useIsMountedRef from "../../hooks/useIsMountedRef";
 import { Stepper } from "react-form-stepper";
 import LogoOnlyLayout from "../../Layouts/LogoOnlyLayout";
-import { CorporateidentificationType, IndividualidentificationType, MDAidentificationType } from "./option";
+import {
+  CorporateidentificationType,
+  IndividualidentificationType,
+  MDAidentificationType,
+} from "./option";
 import StepTwo from "./StepTwo";
+import StepOne from "./StepOne";
 
 // ----------------------------------------------------------------------
 
 export default function RegisterForm() {
   const { register } = useAuth();
   const isMountedRef = useIsMountedRef();
-  const [selectedUserType, setselectedUserType] = useState(1)
+  const [selectedUserType, setselectedUserType] = useState(1);
   // const { enqueueSnackbar, closeSnackbar } = useSnackbar();
   const [showPassword, setShowPassword] = useState(false);
   const [currentStep, setcurrentStep] = useState(0);
@@ -49,7 +54,7 @@ export default function RegisterForm() {
       setcurrentStep(prev < 0 ? 0 : prev);
     }
   };
-  
+
   const formik = useFormik({
     initialValues: {
       userType: "",
@@ -88,11 +93,63 @@ export default function RegisterForm() {
     },
   });
 
-  const { errors, touched, handleSubmit, values, isSubmitting, getFieldProps, setFieldValue } = formik;
+  const {
+    errors,
+    touched,
+    handleSubmit,
+    values,
+    isSubmitting,
+    getFieldProps,
+    setFieldValue,
+  } = formik;
 
   return (
     <>
-      <StepTwo />
+      <div className="card text-left">
+        <div className="card-body">
+          <div className="mb-2 text-center">
+            <LogoOnlyLayout />
+          </div>
+          <h3 className="mb-2 text-center">Signup</h3>
+            <h5 className="mb-3 text-center">Create an account to get started.</h5>
+
+          <Stepper
+            steps={[
+              { label: "Step 1" },
+              { label: "Step 2" },
+              { label: "Step 3" },
+            ]}
+            activeStep={currentStep}
+            styleConfig={stepStyle}
+          />
+          {currentStep === 0 &&
+            <StepOne />
+          
+          }
+          {currentStep === 1 &&
+            <StepTwo />
+          
+          }
+          <div className="d-flex justify-content-between">
+            {currentStep > 0 && (
+              <a
+                className="btn btn-main text-light"
+                role="button"
+                onClick={() => handleStep("prev")}
+              >
+                Prev
+              </a>
+            )}
+            <a
+              className="btn btn-main text-light text-right"
+              role="button"
+              onClick={() => handleStep("next")}
+            >
+              Next
+            </a>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
