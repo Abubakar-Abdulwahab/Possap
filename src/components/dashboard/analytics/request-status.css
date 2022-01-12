@@ -1,0 +1,10 @@
+.apexcharts-canvas svg { height: 72px }
+.apexcharts-canvas svg, .apexcharts-canvas foreignObject {
+  overflow: visible
+}
+.apexcharts-legend {
+  height: 72px;
+  align-content: center;
+  position: relative !important;
+  /* top: calc(392px - 72px) !important */
+}

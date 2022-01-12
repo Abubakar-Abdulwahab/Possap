@@ -1,4 +1,5 @@
 import React from 'react'
+import { cardItemBody, cardItemIcon, cardItem1, cardItemPadding, cardItem2, cardItem3, cardItem4, cardItemIconColor } from './card-css'
 import './card.css'
 
 const IntroCards = () => {
@@ -7,6 +8,28 @@ const IntroCards = () => {
     //         backgroundImage: linear-gradient('135 deg', color , color)
     //     }
     // }
+    const getStyle =(i) =>{
+        switch (i) {
+            case 1:
+                return cardItem1
+                break;
+        
+            case 2:
+                return cardItem2
+                break;
+        
+            case 3:
+                return cardItem3
+                break;
+        
+            case 4:
+                return cardItem4
+                break;
+        
+            default:
+                break;
+        }
+    }
     let cards = [
         {
             count: 754,
@@ -44,12 +67,11 @@ const IntroCards = () => {
     return (
         
         <>
-            {cards.map(e =>(
-             <div className="col-md-3 pt-5 pl-5">
-                 <div class="intro-card" style={{background: e.bg, color: e.color}}>
-                    <div class="icon-detail" style={{ backgroundImage: ` linear-gradient(
-135deg, ${e.gradient[0]} 0%, ${e.gradient[1]} 100%)` }} >
-                    <span className="pcoded-micon"><i className={"feather " + e.icon}></i></span>
+            {cards.map((e,i) =>(
+             <div className="col-md-3" style={{...cardItemPadding}}>
+                 <div  style={{...cardItemBody, ...getStyle(i+1)}}>
+                    <div style={{...cardItemIcon, ...cardItemIconColor[i]}} >
+                    <span className="pcoded-micon" style={{color: e.color}}><i className={"feather " + e.icon}></i></span>
                     
                     </div>
                     <h3 className="h3-css" style={{color: `${e.color}`}}>{e.count}</h3>

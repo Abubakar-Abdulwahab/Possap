@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/PossapLogo.svg";
 
@@ -30,19 +30,34 @@ const NavBar = () => {
               >
                 <ul className="navbar-nav   mr-2  ">
                   <li className="nav-item">
-                    <a href="#" className="nav-link ">
+                    <NavLink
+                      to="/index"
+                      className={({ isActive }) =>
+                        isActive ? 'nav-link active' : 'nav-link'
+                      }
+                    >
                       Request Service
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a href="/about" className="nav-link ">
+                  <NavLink
+                      to="/about"
+                      className={({ isActive }) =>
+                        isActive ? 'nav-link active' : 'nav-link'
+                      }
+                    >
                       About
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a href="/contact" className="nav-link active">
+                  <NavLink
+                      to="/contact"
+                      className={({ isActive }) =>
+                        isActive ? 'nav-link active' : 'nav-link'
+                      }
+                    >
                       Contact
-                    </a>
+                  </NavLink>
                   </li>
 
                   <li className="nav-item ">

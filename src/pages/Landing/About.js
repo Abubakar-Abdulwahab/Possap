@@ -15,7 +15,7 @@ const About = () => {
           <div className="about__hero_bg">
             <div className="about__content">
               <p>Everything you need to know</p>
-              <h2>About POSSAP</h2>
+              <h2 style={{color: 'white'}}>About POSSAP </h2>
             </div>
           </div>
         </section>
