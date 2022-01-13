@@ -1,23 +1,28 @@
 import React, {useState} from 'react'
+import ExtractIncomeGenerated from '../dashboard/extracts/IncomeGenerated'
 
 const ServiceCards = ({data}) => {
     const [state, setstate] = useState(data)
     return (
        <>
-         {state.map(e =>(
-            <div  class="col-md-6 col-xl-4">
-            <div class="card daily-sales">
+        <div  class="col-md-6 col-xl-4">
+       <ExtractIncomeGenerated/>
+
+        </div>
+         {state.map((e, i) =>(
+            <div  class="col-md-6 col-xl-4" >
+            <div class="card daily-sales" style={{height: '100%', borderRadius: '16px' }}>
             <div class="card-block">
                 <h6 class="mb-4">{e}</h6>
                 <div class="row d-flex align-items-center">
                 <div class="col-9">
                     <h3 class="f-w-300 d-flex align-items-center m-b-0">
-                    <i class="feather icon-arrow-up text-c-green f-30 m-r-10"></i>$
-                    249.95
+                    <i class="feather icon-arrow-up text-c-green f-30 m-r-10"></i>
+                        {500 * (i +1)}
                     </h3>
                 </div>
     
-                <div class="col-3 text-right">
+                <div class="col-3 text-right mb-5">
                     <p class="m-b-0">67%</p>
                 </div>
                 </div>

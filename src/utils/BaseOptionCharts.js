@@ -108,7 +108,7 @@ export default function BaseOptionChart() {
           radius: 12
         },
         fontWeight: 500,
-        itemMargin: { horizontal: 12 },
+        itemMargin: { horizontal: 12, vertical: 12 },
         labels: {
           colors: '#5E656D'
         }

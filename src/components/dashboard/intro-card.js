@@ -32,34 +32,34 @@ const IntroCards = () => {
     }
     let cards = [
         {
-            count: 754,
-            title: 'December Revenue',
+            count: '50,000,000.00',
+            title: 'Revenue Generated',
             color: '#005249',
             icon: 'icon-activity',
             gradient: ['#007b55', '#007b553d'],
             bg: '#c8facd'
         },
         {
-            count: 754,
-            title: 'Cost of Service',
+            count: '250,000',
+            title: 'Total no of Officers',
             color: '#04297a',
-            icon: 'icon-activity',
+            icon: 'icon-users',
             gradient: ['#0c53b7', '#0c53b73d'],
             bg: '#d0f2ff'
         },
         {
-            count: 754,
-            title: 'Pending Request',
+            count: '250,000',
+            title: 'Total no of Users',
             color: '#7a4f01',
-            icon: 'icon-activity',
+            icon: 'icon-users',
             gradient: ['#b78103', '#b781033d'],
             bg: '#fff7cd'
         },
         {
-            count: 754,
-            title: 'Pending Request',
+            count: 1754,
+            title: 'Total no of Commands',
             color: '#7a0c2e',
-            icon: 'icon-activity',
+            icon: 'icon-codepen',
             gradient: ['#b72136', '#b721363d'],
             bg: '#ffe7d9'
         }
