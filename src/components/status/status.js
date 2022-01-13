@@ -1,10 +1,14 @@
 import React from "react";
 
-export const statusBadge = ({ row, value, status }) => {
+export const statusBadge = ({ status }) => {
   return (
     <>
       <div>
-        <span class="badge bg-primary">Primary</span>
+        {status ? (
+          <span class="badge bg-primary">Primary</span>
+        ) : (
+          <span class="badge bg-danger">Danger</span>
+        )}
       </div>
     </>
   );
