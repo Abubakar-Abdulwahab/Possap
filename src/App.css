@@ -74,7 +74,7 @@ body {
   padding: 1em 2.5em;
   border: none;
   outline: black;
-  background: #2f4cb0;
+  background: #0e2160;
   color: #fff;
   display: inline-block;
   border-radius: 4px;
@@ -270,7 +270,7 @@ body {
 .reasons__get_started {
   font-size: 1rem;
   line-height: 24px;
-  color: #2f4cb0;
+  color: #0e2160;
   font-weight: 400;
   text-decoration: none;
 }
@@ -624,4 +624,22 @@ body {
   }
 
   /* ABOUT PAFE */
+}
+.react-bootstrap-table {
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+}
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+.react-bootstrap-table-sort-order .caret:before {
+  margin-left: 3.5px;
+  content: "\2191";
+}
+.react-bootstrap-table th .caret:after {
+  content: "\2193";
+  opacity: 0.4;
 }

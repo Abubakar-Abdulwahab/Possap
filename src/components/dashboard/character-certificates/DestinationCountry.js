@@ -1,12 +1,14 @@
 import { merge } from "lodash";
 import React from "react";
 import ReactApexChart from "react-apexcharts";
-import BaseOptionChart from "../../utils/BaseOptionCharts";
-import helper from "../../utils/helper";
+import BaseOptionChart from "../../../utils/BaseOptionCharts";
+import helper from "../../../utils/helper";
 
-const CommandRating = () => {
+
+const DestinationCountry = () => {
   const CHART_DATA = [{ data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380] }];
   const chartOptions = merge(BaseOptionChart(), {
+    colors: ['#2E93fA', '#66DA26', '#546E7A', '#E91E63', '#FF9800'],
     tooltip: {
       marker: { show: false },
       y: {
@@ -17,33 +19,31 @@ const CommandRating = () => {
       }
     },
     plotOptions: {
-      bar: { horizontal: true, barHeight: '38%', borderRadius: 2 }
-    },
+        bar: { horizontal: true, barHeight: '38%', borderRadius: 2 }
+      },
     legend: { floating: true, horizontalAlign: 'center', itemMargin: {
-      horizontal: 5,
-      vertical: 12
-  }, },
+        horizontal: 5,
+        vertical: 12
+    }, },
     xaxis: {
       categories: [
-        ' Kubwa  Command',
-        ' Gwarimpa  Command',
-        'Apo  Command',
-        'Mabushi  Command',
-        'Maitama  Command',
-        'Lekki  Command',
-        'AMAC  Command',
-        'Wuse  Command',
-        'Bwari  Command',
-        'Dutse  Command'
+        'United States',
+        'United Kingdom',
+        'Dubai',
+        'Canada',
+        'France',
+        'Netherlands',
+        'India',
+       
       ]
     }
   });
 
   return (
-    <div class="col-md-8">
+    <div class="col-md-6">
       <div class="card user-list">
       <div class="card-header">
-          <h3>Top 10 Commands</h3>
+          <h3>Destination Country</h3>
         </div>
             <ReactApexChart type="bar" series={CHART_DATA} options={chartOptions} height={364} />
       
@@ -52,4 +52,7 @@ const CommandRating = () => {
   );
 };
 
-export default CommandRating;
+export default DestinationCountry;
+
+
+
