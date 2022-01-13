@@ -5,8 +5,8 @@ import data from '../../assets/db/extract.json'
 const RequestTable = () => {
     //  extractColumns
     return (
-        <div class="col-md-8">
-            <DataTable columns={extractColumns} data={data} />
+        <div class="col-md-12 mt-3">
+            <DataTable columns={extractColumns} data={data} title="Activity" />
     </div>
     )
 }

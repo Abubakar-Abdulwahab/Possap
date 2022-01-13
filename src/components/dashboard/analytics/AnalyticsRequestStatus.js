@@ -25,13 +25,13 @@ export default function AnalyticsRequestStatus() {
   console.log(helper.fNumber(2324))
   const chartOptions = merge(BaseOptionChart(), {
     chart: {
-      height: 280,
+      height: 295,
       type: "radialBar",
     },
     series: [67, 84, 97],
     plotOptions: {
       radialBar: {
-        hollow: { size: '68%' },
+        hollow: { size: '58%' },
         dataLabels: {
           value: { offsetY: 16 },
           total: {
@@ -49,7 +49,7 @@ export default function AnalyticsRequestStatus() {
        <h3> Request Status</h3>
       </div>
       <div dir="ltr" className='card-body'>
-        <ReactApexChart type="radialBar" series={CHART_DATA} options={chartOptions} height={310} />
+        <ReactApexChart type="radialBar" series={CHART_DATA} options={chartOptions} height={321} />
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from 'react'
 
 const StatsCard = () => {
     return (
-        <div class="col-xl-4 col-md-6">
+        <div class="col-xl-4 col-md-6 mt-3">
                                     <div class="card card-event">
                                         <div class="card-block">
                                             <div class="row align-items-center justify-content-center">
