@@ -111,6 +111,8 @@ export default function Router() {
     { path: "index", element: <Landing /> },
     { path: "about", element: <About /> },
     { path: "contact", element: <Contact /> },
+    //will be sorted out later
+    { path: "select-service", element: <RequestServices /> },
   ]);
 }
 
@@ -119,6 +121,9 @@ export default function Router() {
 const Landing = Loadable(lazy(() => import("../pages/Landing/Landing")));
 const About = Loadable(lazy(() => import("../pages/Landing/About")));
 const Contact = Loadable(lazy(() => import("../pages/Landing/Contact")));
+const RequestServices = Loadable(
+  lazy(() => import("../pages/request-services"))
+);
 // Main Dashboard
 const Main = Loadable(lazy(() => import("../pages/main")));
 // Authentication

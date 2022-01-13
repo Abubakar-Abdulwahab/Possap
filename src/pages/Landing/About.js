@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import NavBar from "../Landing/navbar";
 import Footer from "../Landing/footer";
+import { HelpSection } from "./components/HelpSection";
 
 const About = () => {
   return (
@@ -198,36 +199,7 @@ const About = () => {
             </div>
           </div>
         </section>
-
-        <section id="help">
-          <div class="container">
-            <div class="row">
-              <div class="help__content">
-                <h2 class="help__title ">Need help with getting started?</h2>
-                <div class="row">
-                  <div class="col-md-4">
-                    <img src="./images/questionTwo.svg" alt="question one" />
-                  </div>
-                  <div class="col-md-4">
-                    <p>
-                      We understand that you might have questions about the
-                      process of making a request and possible complaints. Feel
-                      free to reach out to us
-                    </p>
-                  </div>
-                  <div class="col-md-4">
-                    <img src="./images/questionOne.svg" alt="question two" />
-                  </div>
-                </div>
-                <div class="benefits__btn_container">
-                  <a href="#" role="button" class="btn  benefits__btn">
-                    Contact Us
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <HelpSection />
       </div>
 
       <Footer />

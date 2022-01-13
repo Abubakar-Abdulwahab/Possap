@@ -1,0 +1,55 @@
+.request_services__container {
+  padding: 40px 0;
+}
+
+.select__service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.form__title {
+  font-size: var(--fs-400);
+  color: var(--primary-text-color);
+  line-height: 36px;
+  font-weight: 600;
+}
+.form__subtitle {
+  color: #a5a5a5;
+  font-size: var(--fs-200);
+  line-height: 24px;
+  font-weight: 400;
+}
+.select__service_radio_btns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.4em;
+}
+
+.select__service_radio_btns .form-check:nth-child(-n + 3) {
+  margin-right: 2em;
+  font-weight: 600;
+  color: var(--primary-text-color);
+}
+
+.form__select {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.form__select select {
+  font-size: var(--fs-200);
+}
+
+.form__btn {
+  background: var(--primary-color);
+  color: #fff;
+  width: 100%;
+}
+
+.form_btn__group {
+  display: flex;
+}
+.notice__bg {
+  background: #fff;
+}

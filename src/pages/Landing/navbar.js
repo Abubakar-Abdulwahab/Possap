@@ -10,9 +10,9 @@ const NavBar = () => {
         <header>
           <nav className="navbar navbar-expand-md navbar-light">
             <div className="container-fluid">
-              <a className="navbar-brand" href="/index.html">
+              <Link className="navbar-brand" to="/index">
                 <img src={Logo} alt="logo" className="logo" />
-              </a>
+              </Link>
               <button
                 className="navbar-toggler"
                 type="button"
@@ -31,12 +31,12 @@ const NavBar = () => {
                 <ul className="navbar-nav   mr-2  ">
                   <li className="nav-item">
                     <a href="#" className="nav-link ">
-                      <Link to="/">Request Service</Link>
+                      <Link to="/select-service">Request Service</Link>
                     </a>
                   </li>
                   <li className="nav-item">
                     <a href="/about" className="nav-link ">
-                      <Link to="/">About</Link>
+                      <Link to="/about">About</Link>
                     </a>
                   </li>
                   <li className="nav-item">
