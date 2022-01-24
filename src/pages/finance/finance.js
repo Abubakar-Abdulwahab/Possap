@@ -4,6 +4,7 @@ import ExtractIncomeGenerated from "../../components/dashboard/extracts/IncomeGe
 import FinanceCards from "../../components/dashboard/finance/FinanceCards";
 import IncomeExpense from "../../components/dashboard/finance/IncomeExpense";
 import CommandRating from "../../components/services/commandRating";
+import TopCommands from "../../components/dashboard/finance/TopCommands";
 
 const Finance = (props) => {
   const data = [
@@ -43,6 +44,15 @@ const Finance = (props) => {
           </div>
       
               <CommandRating />
+          
+      
+    </div>
+    <div className="row  mb-3">
+      <div className="col-md-12">
+              
+              <TopCommands />
+          </div>
+      
           
       
     </div>

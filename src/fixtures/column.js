@@ -2,7 +2,7 @@ import helper from "../utils/helper";
 export const ActivityColumns  = [
     {
        dataField: 'id',
-       text: 'Product ID',
+       text: 'ID',
        sort: true
      }, 
      {
@@ -32,18 +32,31 @@ export const ActivityColumns  = [
      }
    ];
 
-export const extractColumns = [
-    "name",
-    "command",
-    "division",
-    "location",
-    "category",
-    "sub-category",
-    "status"
-].map(e => {
-  return {
-    dataField: e,
-    text: helper.capitalizeFirstLetter(e),
-    sort: true
-  }
-})
+export const policeExtractColumns = helper.arrayToColumn([
+  "name",
+  "command",
+  "division",
+  "location",
+  "category",
+  "sub-category",
+  "status"
+])
+// extractColumns.map(e =>{
+//   if(e.dataField === 'status'){
+//     return {
+//       ...e,
+//       // formatter: (row, val) =>(
+//       //   // <StatusComponent />
+//       // )
+//     }
+//   }
+//   return e
+// })
+// const col = [...extractColumns, {
+//   dataField: 'category',
+//   text: 'Service Category',
+//   sort: true,
+//   // formatter: (row, val) =>(
+//       //   // <StatusComponent />
+//       // )
+//}]

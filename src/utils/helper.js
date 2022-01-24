@@ -12,7 +12,16 @@ class HelperService {
       
     fPercent(number) {
         return numeral(number / 100).format('0.0%');
-      }
+    }
+    arrayToColumn(array){
+        return array.map(e => {
+            return {
+              dataField: e,
+              text: this.capitalizeFirstLetter(e),
+              sort: true
+            }
+          })
+    }
 
 }
 export default new HelperService();

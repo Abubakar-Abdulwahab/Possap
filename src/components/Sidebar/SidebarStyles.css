@@ -1,0 +1,540 @@
+.possap-sidebar {
+    color: #adadad;
+    height: auto;
+    width: 270px;
+    min-width: 270px;
+    text-align: left;
+    transition: width, left, right, 0.3s;
+    position: relative;
+    z-index: 1009;
+}
+.possap-sidebar > .possap-sidebar-inner {
+    background: #08102D;
+    height: 100%;
+    position: relative;
+    z-index: 101;
+}
+.possap-sidebar > .possap-sidebar-inner > img.sidebar-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    opacity: 0.3;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.possap-sidebar > .possap-sidebar-inner > .possap-sidebar-layout {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 101;
+}
+.possap-sidebar > .possap-sidebar-inner > .possap-sidebar-layout .possap-sidebar-header {
+    border-bottom: 1px solid rgba(173, 173, 173, 0.2);
+}
+.possap-sidebar > .possap-sidebar-inner > .possap-sidebar-layout .possap-sidebar-content {
+    flex-grow: 1;
+}
+.possap-sidebar > .possap-sidebar-inner > .possap-sidebar-layout .possap-sidebar-footer {
+    border-top: 1px solid rgba(173, 173, 173, 0.2);
+}
+.possap-sidebar > .possap-sidebar-inner > .possap-sidebar-layout ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.possap-sidebar .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    display: none;
+}
+.possap-sidebar.collapsed {
+    width: 80px;
+    min-width: 80px;
+}
+.possap-sidebar.rtl {
+    text-align: right;
+    direction: rtl;
+}
+@media (max-width: 480px) {
+    .possap-sidebar.xs {
+        position: fixed;
+        left: -270px;
+   }
+    .possap-sidebar.xs.collapsed {
+        left: -80px;
+   }
+    .possap-sidebar.xs.toggled {
+        left: 0;
+   }
+    .possap-sidebar.xs.toggled .overlay {
+        display: block;
+   }
+    .possap-sidebar.xs.rtl {
+        left: auto;
+        right: -270px;
+   }
+    .possap-sidebar.xs.rtl.collapsed {
+        left: auto;
+        right: -80px;
+   }
+    .possap-sidebar.xs.rtl.toggled {
+        left: auto;
+        right: 0;
+   }
+}
+@media (max-width: 576px) {
+    .possap-sidebar.sm {
+        position: fixed;
+        left: -270px;
+   }
+    .possap-sidebar.sm.collapsed {
+        left: -80px;
+   }
+    .possap-sidebar.sm.toggled {
+        left: 0;
+   }
+    .possap-sidebar.sm.toggled .overlay {
+        display: block;
+   }
+    .possap-sidebar.sm.rtl {
+        left: auto;
+        right: -270px;
+   }
+    .possap-sidebar.sm.rtl.collapsed {
+        left: auto;
+        right: -80px;
+   }
+    .possap-sidebar.sm.rtl.toggled {
+        left: auto;
+        right: 0;
+   }
+}
+@media (max-width: 768px) {
+    .possap-sidebar.md {
+        position: fixed;
+        left: -270px;
+   }
+    .possap-sidebar.md.collapsed {
+        left: -80px;
+   }
+    .possap-sidebar.md.toggled {
+        left: 0;
+   }
+    .possap-sidebar.md.toggled .overlay {
+        display: block;
+   }
+    .possap-sidebar.md.rtl {
+        left: auto;
+        right: -270px;
+   }
+    .possap-sidebar.md.rtl.collapsed {
+        left: auto;
+        right: -80px;
+   }
+    .possap-sidebar.md.rtl.toggled {
+        left: auto;
+        right: 0;
+   }
+}
+@media (max-width: 992px) {
+    .possap-sidebar.lg {
+        position: fixed;
+        left: -270px;
+   }
+    .possap-sidebar.lg.collapsed {
+        left: -80px;
+   }
+    .possap-sidebar.lg.toggled {
+        left: 0;
+   }
+    .possap-sidebar.lg.toggled .overlay {
+        display: block;
+   }
+    .possap-sidebar.lg.rtl {
+        left: auto;
+        right: -270px;
+   }
+    .possap-sidebar.lg.rtl.collapsed {
+        left: auto;
+        right: -80px;
+   }
+    .possap-sidebar.lg.rtl.toggled {
+        left: auto;
+        right: 0;
+   }
+}
+@media (max-width: 1200px) {
+    .possap-sidebar.xl {
+        position: fixed;
+        left: -270px;
+   }
+    .possap-sidebar.xl.collapsed {
+        left: -80px;
+   }
+    .possap-sidebar.xl.toggled {
+        left: 0;
+   }
+    .possap-sidebar.xl.toggled .overlay {
+        display: block;
+   }
+    .possap-sidebar.xl.rtl {
+        left: auto;
+        right: -270px;
+   }
+    .possap-sidebar.xl.rtl.collapsed {
+        left: auto;
+        right: -80px;
+   }
+    .possap-sidebar.xl.rtl.toggled {
+        left: auto;
+        right: 0;
+   }
+}
+@media (max-width: 1600px) {
+    .possap-sidebar.xxl {
+        position: fixed;
+        left: -270px;
+   }
+    .possap-sidebar.xxl.collapsed {
+        left: -80px;
+   }
+    .possap-sidebar.xxl.toggled {
+        left: 0;
+   }
+    .possap-sidebar.xxl.toggled .overlay {
+        display: block;
+   }
+    .possap-sidebar.xxl.rtl {
+        left: auto;
+        right: -270px;
+   }
+    .possap-sidebar.xxl.rtl.collapsed {
+        left: auto;
+        right: -80px;
+   }
+    .possap-sidebar.xxl.rtl.toggled {
+        left: auto;
+        right: 0;
+   }
+}
+.possap-sidebar .possap-menu.submenu-bullets .possap-menu-item.possap-sub-menu .possap-inner-list-item .possap-inner-item:before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    min-width: 4px;
+    height: 4px;
+    border: 1px solid #2b2b2b;
+    border-radius: 50%;
+    margin-right: 15px;
+    position: relative;
+    box-shadow: 1px 0px 0px #adadad, 0px -1px 0px #adadad, 0px 1px 0px #adadad, -1px 0px 0px #adadad;
+}
+.possap-sidebar .possap-menu .possap-menu-item > .possap-inner-item > .possap-item-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.possap-sidebar .possap-menu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.possap-sidebar .possap-menu > ul > .possap-sub-menu > .possap-inner-list-item {
+    position: relative;
+    background-color: #18293f;
+}
+.possap-sidebar .possap-menu > ul > .possap-sub-menu > .possap-inner-list-item > div > ul {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.possap-sidebar .possap-menu a {
+    text-decoration: none;
+    color: #adadad;
+}
+.possap-sidebar .possap-menu a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+}
+.possap-sidebar .possap-menu a:hover {
+    color: #d8d8d8;
+}
+.possap-sidebar .possap-menu .possap-menu-item {
+    font-size: 15px;
+}
+.possap-sidebar .possap-menu .possap-menu-item.active {
+    color: #d8d8d8;
+}
+.possap-sidebar .possap-menu .possap-menu-item .suffix-wrapper {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+.possap-sidebar .possap-menu .possap-menu-item .prefix-wrapper {
+    display: flex;
+    margin-right: 5px;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+.possap-sidebar .possap-menu .possap-menu-item > .possap-inner-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 8px 35px 8px 20px;
+    cursor: pointer;
+}
+.possap-sidebar .possap-menu .possap-menu-item > .possap-inner-item:focus {
+    outline: none;
+    color: #d0f2ff !important;
+}
+.possap-sidebar .possap-menu .possap-menu-item > .possap-inner-item > .possap-icon-wrapper {
+    margin-right: 10px;
+    font-size: 14px;
+    width: 35px;
+    min-width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: inline-block;
+}
+.possap-sidebar .possap-menu .possap-menu-item > .possap-inner-item > .possap-icon-wrapper .possap-icon {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.possap-sidebar .possap-menu .possap-menu-item > .possap-inner-item > .possap-item-content {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.possap-sidebar .possap-menu .possap-menu-item > .possap-inner-item:hover {
+    color: #d8d8d8;
+}
+.possap-sidebar .possap-menu .possap-menu-item > .possap-inner-item:hover .possap-icon-wrapper .possap-icon {
+    animation: swing ease-in-out 0.5s 1 alternate;
+}
+.possap-sidebar .possap-menu .possap-menu-item.possap-sub-menu > .possap-inner-item:before {
+    background: #adadad;
+}
+.possap-sidebar .possap-menu .possap-menu-item.possap-sub-menu > .possap-inner-item > .possap-arrow-wrapper {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.possap-sidebar .possap-menu .possap-menu-item.possap-sub-menu > .possap-inner-item > .possap-arrow-wrapper .possap-arrow {
+    display: inline-block;
+    border-style: solid;
+    border-color: #adadad;
+    border-width: 0 2px 2px 0;
+    padding: 2.5px;
+    vertical-align: middle;
+    transition: transform 0.3s;
+    transform: rotate(-45deg);
+}
+.possap-sidebar .possap-menu .possap-menu-item.possap-sub-menu.open > .possap-inner-item:before {
+    background: transparent !important;
+}
+.possap-sidebar .possap-menu .possap-menu-item.possap-sub-menu.open > .possap-inner-item > .possap-arrow-wrapper .possap-arrow {
+    transform: rotate(45deg);
+}
+.possap-sidebar .possap-menu .possap-menu-item.possap-sub-menu .possap-inner-list-item {
+    padding-left: 24px;
+}
+.possap-sidebar .possap-menu .possap-menu-item.possap-sub-menu .possap-inner-list-item .possap-inner-item {
+    padding: 8px 30px 8px 15px;
+}
+.possap-sidebar .possap-menu .possap-menu-item.possap-sub-menu .possap-inner-list-item .possap-inner-item > .possap-icon-wrapper {
+    background: none;
+    width: auto;
+    min-width: auto;
+    height: auto;
+    line-height: auto;
+}
+.possap-sidebar .possap-menu:not(.inner-submenu-arrows) .possap-inner-list-item .possap-menu-item.possap-sub-menu .possap-inner-item .possap-arrow-wrapper {
+    display: none;
+}
+.possap-sidebar .possap-menu.shaped .possap-menu-item > .possap-inner-item > .possap-icon-wrapper {
+    background-color: #18293f;;
+}
+.possap-sidebar .possap-menu.square .possap-menu-item > .possap-inner-item > .possap-icon-wrapper {
+    border-radius: 0;
+}
+.possap-sidebar .possap-menu.round .possap-menu-item > .possap-inner-item > .possap-icon-wrapper {
+    border-radius: 4px;
+}
+.possap-sidebar .possap-menu.circle .possap-menu-item > .possap-inner-item > .possap-icon-wrapper {
+    border-radius: 50%;
+}
+.possap-sidebar.collapsed .possap-menu > ul > .possap-menu-item {
+    position: relative;
+}
+.possap-sidebar.collapsed .possap-menu > ul > .possap-menu-item > .possap-inner-item > .suffix-wrapper, .possap-sidebar.collapsed .possap-menu > ul > .possap-menu-item > .possap-inner-item > .prefix-wrapper {
+    opacity: 0;
+}
+.possap-sidebar.collapsed .possap-menu > ul > .possap-menu-item > .possap-inner-list-item {
+    background-color: #2b2b2b;
+    z-index: 111;
+}
+.possap-sidebar.collapsed .possap-menu > ul > .possap-menu-item::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+}
+.possap-sidebar.collapsed .possap-menu > ul > .possap-menu-item.possap-sub-menu {
+    position: relative;
+}
+.possap-sidebar.collapsed .possap-menu > ul > .possap-menu-item.possap-sub-menu > .possap-inner-item {
+    pointer-events: none;
+}
+.possap-sidebar.collapsed .possap-menu > ul > .possap-menu-item.possap-sub-menu > .possap-inner-item > .possap-arrow-wrapper {
+    display: none;
+}
+.possap-sidebar.collapsed .possap-menu > ul > .possap-menu-item.possap-sub-menu > .possap-inner-list-item {
+    height: auto !important;
+    position: fixed;
+    visibility: hidden;
+    min-width: 220px;
+    max-width: 270px;
+    background-color: transparent;
+    max-height: 100%;
+    padding-left: 3px;
+}
+.possap-sidebar.collapsed .possap-menu > ul > .possap-menu-item.possap-sub-menu > .possap-inner-list-item.has-arrow {
+    padding-left: 10px;
+}
+.possap-sidebar.collapsed .possap-menu > ul > .possap-menu-item.possap-sub-menu > .possap-inner-list-item > .popper-inner {
+    max-height: 100vh;
+    overflow-y: auto;
+    background-color: #2b2b2b;
+    padding-left: 20px;
+    border-radius: 4px;
+}
+.possap-sidebar.collapsed .possap-menu > ul > .possap-menu-item.possap-sub-menu:hover > .possap-inner-list-item {
+    transition: visibility, transform 0.3s;
+    visibility: visible;
+}
+.possap-sidebar.collapsed .possap-menu > ul > .possap-menu-item.possap-sub-menu:hover .possap-icon-wrapper .possap-icon {
+    animation: swing ease-in-out 0.5s 1 alternate;
+}
+.possap-sidebar.collapsed .possap-menu > ul > .possap-menu-item.possap-sub-menu .possap-inner-list-item .possap-sub-menu-item, .possap-sidebar.collapsed .possap-menu > ul > .possap-menu-item.possap-sub-menu .possap-inner-list-item .possap-inner-item {
+    padding: 8px 30px 8px 5px;
+}
+.possap-sidebar.rtl .possap-menu .possap-menu-item .prefix-wrapper {
+    margin-right: 0;
+    margin-left: 5px;
+}
+.possap-sidebar.rtl .possap-menu .possap-menu-item > .possap-inner-item {
+    padding: 8px 20px 8px 35px;
+}
+.possap-sidebar.rtl .possap-menu .possap-menu-item > .possap-inner-item > .possap-icon-wrapper {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.possap-sidebar.rtl .possap-menu .possap-menu-item.possap-sub-menu > .possap-inner-item > .possap-arrow-wrapper {
+    right: auto;
+    left: 20px;
+}
+.possap-sidebar.rtl .possap-menu .possap-menu-item.possap-sub-menu > .possap-inner-item > .possap-arrow-wrapper .possap-arrow {
+    transform: rotate(135deg);
+}
+.possap-sidebar.rtl .possap-menu .possap-menu-item.possap-sub-menu.open > .possap-inner-item > .possap-arrow-wrapper .possap-arrow {
+    transform: rotate(45deg);
+}
+.possap-sidebar.rtl .possap-menu .possap-menu-item.possap-sub-menu .possap-inner-list-item {
+    padding-left: 0;
+    padding-right: 24px;
+}
+.possap-sidebar.rtl .possap-menu .possap-menu-item.possap-sub-menu .possap-inner-list-item .possap-inner-item {
+    padding: 8px 15px 8px 30px;
+}
+.possap-sidebar.rtl .possap-menu .possap-menu-item.possap-sub-menu .possap-inner-list-item .possap-inner-item:before {
+    margin-right: 0;
+    margin-left: 15px;
+}
+.possap-sidebar.rtl.collapsed .possap-menu > ul > .possap-menu-item.possap-sub-menu > .possap-inner-list-item {
+    padding-left: 0;
+    padding-right: 3px;
+}
+.possap-sidebar.rtl.collapsed .possap-menu > ul > .possap-menu-item.possap-sub-menu > .possap-inner-list-item.has-arrow {
+    padding-right: 10px;
+}
+.possap-sidebar.rtl.collapsed .possap-menu > ul > .possap-menu-item.possap-sub-menu > .possap-inner-list-item > .popper-inner {
+    padding-left: 0;
+    padding-right: 20px;
+}
+.possap-sidebar.rtl.collapsed .possap-menu > ul > .possap-menu-item.possap-sub-menu .possap-inner-list-item .possap-sub-menu-item, .possap-sidebar.rtl.collapsed .possap-menu > ul > .possap-menu-item.possap-sub-menu .possap-inner-list-item .possap-inner-item {
+    padding: 8px 5px 8px 30px;
+}
+.popper-arrow {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+}
+.popper-element[data-popper-placement^='left'] > .popper-arrow {
+    right: 0;
+    border-right: 7px solid #2b2b2b;
+}
+.popper-element[data-popper-placement^='right'] > .popper-arrow {
+    left: 0;
+    border-left: 7px solid #2b2b2b;
+}
+.react-slidedown {
+    height: 0;
+    transition-property: none;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+.react-slidedown.transitioning {
+    overflow-y: hidden;
+}
+.react-slidedown.closed {
+    display: none;
+}
+
+@keyframes swing {
+    0%,
+    30%,
+    50%,
+    70%,
+    100% {
+      transform: rotate(0deg);
+    }
+  
+    10% {
+      transform: rotate(10deg);
+    }
+  
+    40% {
+      transform: rotate(-10deg);
+    }
+  
+    60% {
+      transform: rotate(5deg);
+    }
+  
+    80% {
+      transform: rotate(-5deg);
+    }
+  }
