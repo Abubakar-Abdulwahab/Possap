@@ -1,12 +1,12 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/PossapLogo.svg";
 
 const NavBar = () => {
   return (
     <div>
-      <section id="nav-bar">
+      <section id="nav-bar" activeClassName="active">
         <header>
           <nav className="navbar navbar-expand-md navbar-light">
             <div className="container-fluid">
@@ -30,19 +30,34 @@ const NavBar = () => {
               >
                 <ul className="navbar-nav   mr-2  ">
                   <li className="nav-item">
-                    <a href="#" className="nav-link ">
-                      <Link to="/">Request Service</Link>
-                    </a>
+                    <NavLink
+                      to="/index"
+                      className={({ isActive }) =>
+                        isActive ? 'nav-link active' : 'nav-link'
+                      }
+                    >
+                      Request Service
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a href="/about" className="nav-link ">
-                      <Link to="/">About</Link>
-                    </a>
+                  <NavLink
+                      to="/about"
+                      className={({ isActive }) =>
+                        isActive ? 'nav-link active' : 'nav-link'
+                      }
+                    >
+                      About
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a href="/contact" className="nav-link active">
-                      <Link to="/contact">Contact</Link>
-                    </a>
+                  <NavLink
+                      to="/contact"
+                      className={({ isActive }) =>
+                        isActive ? 'nav-link active' : 'nav-link'
+                      }
+                    >
+                      Contact
+                  </NavLink>
                   </li>
 
                   <li className="nav-item ">

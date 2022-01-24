@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Amii Breckenridge",
+    "state": "Berezanka",
+    "lga": "Felis caracal",
+    "country": "Ukraine"
+  },
+  {
+    "id": 2,
+    "name": "Owen Landers",
+    "state": "São Vicente",
+    "lga": "Alopochen aegyptiacus",
+    "country": "Brazil"
+  },
+  {
+    "id": 3,
+    "name": "Marieann MacCafferky",
+    "state": "Wuping",
+    "lga": "Acanthaster planci",
+    "country": "China"
+  },
+  {
+    "id": 4,
+    "name": "Katha Skylett",
+    "state": "Tinaco",
+    "lga": "Mephitis mephitis",
+    "country": "Venezuela"
+  },
+  {
+    "id": 5,
+    "name": "Brenna Loxston",
+    "state": "Wete",
+    "lga": "Chauna torquata",
+    "country": "Tanzania"
+  },
+  {
+    "id": 6,
+    "name": "Melosa Van Arsdall",
+    "state": "Lüyang",
+    "lga": "Felis pardalis",
+    "country": "China"
+  },
+  {
+    "id": 7,
+    "name": "Tobi Bromby",
+    "state": "Chrzanów",
+    "lga": "Pycnonotus nigricans",
+    "country": "Poland"
+  },
+  {
+    "id": 8,
+    "name": "Gwenore Kennermann",
+    "state": "Pesochnoye",
+    "lga": "Castor canadensis",
+    "country": "Russia"
+  },
+  {
+    "id": 9,
+    "name": "Julissa Gerrelts",
+    "state": "Jönköping",
+    "lga": "Bubalus arnee",
+    "country": "Sweden"
+  },
+  {
+    "id": 10,
+    "name": "Jaquelin Hethron",
+    "state": "Songea",
+    "lga": "Phoeniconaias minor",
+    "country": "Tanzania"
+  }
+]

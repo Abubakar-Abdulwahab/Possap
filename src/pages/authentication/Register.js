@@ -20,8 +20,8 @@ export default function Register() {
   const { method } = useAuth();
 
   return (
-    <div className="auth-wrapper">
-    <div className="auth-content">
+    <div className="auth-wrapper" >
+    <div className="auth-content" style={{width: '45vw'}}>
       
     <div className="auth-bg">
               <span className="r"></span>

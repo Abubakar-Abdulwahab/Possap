@@ -14,24 +14,27 @@ const  DashboardLayout =() => {
 
 
   return (
-    <div>
+    <div style={{display: 'flex', position: 'relative', height:'100%'}}>
       <DashboardSidebar  />
-      <DashboardNavbar  />
-      <div className="pcoded-main-container">
-        <div class="pcoded-wrapper">
-          <div class="pcoded-content">
-            <div class="pcoded-inner-content">
-              <div class="main-body">
-                <div class="page-wrapper">
-                  <div class="row">
-                    <Outlet />
+      <main>
+        {/* <DashboardNavbar  /> */}
+        <div className="">
+          <div class="pcoded-wrapper">
+            <div class="pcoded-content">
+              <div class="pcoded-inner-content">
+                <div class="main-body">
+                  <div class="page-wrapper">
+                    <div class="row">
+                      <Outlet />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+
+      </main>
     </div>
   );
 }

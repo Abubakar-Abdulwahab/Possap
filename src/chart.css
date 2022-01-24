@@ -1,0 +1,35 @@
+.apexcharts-tooltip, .apexcharts-xaxistooltip {
+    border: 0 !important;
+    border-radius: 4px !important;
+    background: #fff
+  }
+  .apexcharts-tooltip-title {
+    border: 0 !important;
+    font-weight: bold;
+    background-color: grey !important;
+
+  }
+  .apexcharts-xaxistooltip-bottom::before {
+      border-bottom-color:  transparent !important
+    }
+    .apexcharts-xaxistooltip-bottom:after {
+      border-bottom-color:  #eee !important
+    }
+  
+
+  .apexcharts-legend {
+    padding: 0 !important
+  }
+  .apexcharts-legend-series {
+    align-items: center;
+    display: flex !important
+  }
+  .apexcharts-legend-marker {
+    margin-top: -2px !important;
+    margin-right: 8px !important
+  }
+  .apexcharts-legend-text {
+    line-height: 18px;
+    text-transform: capitalize
+  }
+
