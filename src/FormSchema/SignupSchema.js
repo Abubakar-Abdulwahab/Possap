@@ -1,8 +1,6 @@
 import helper from "../utils/helper";
 import NaijaStates from 'naija-state-local-government';
-function isUpper(str) {
-    return !/[a-z]/.test(str) && /[A-Z]/.test(str);
-}
+
 const selectTypes = ['state', 'lga', 'gender']
 const textareaTypes = ['address']
 const labelTransform = {

@@ -10,7 +10,7 @@ const NavBar = () => {
         <header>
           <nav className="navbar navbar-expand-md navbar-light">
             <div className="container-fluid">
-              <a className="navbar-brand" href="/index.html">
+              <a className="navbar-brand" href="/">
                 <img src={Logo} alt="logo" className="logo" />
               </a>
               <button
@@ -61,9 +61,9 @@ const NavBar = () => {
                   </li>
 
                   <li className="nav-item ">
-                    <a className="nav_btn" role="button">
+                    <Link to="/auth/login" className="nav_btn" role="button">
                       Login | Sign Up
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

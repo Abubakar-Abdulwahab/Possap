@@ -29,7 +29,7 @@ const Finance = (props) => {
   ]
   return (
     <>
-    <div className="row mb-3">
+    <div className="row mb-3 mt-5">
       {data.map(d =>(
         <div className="col-md-4">
             <FinanceCards key={data.title} data={d}/>

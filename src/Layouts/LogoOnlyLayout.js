@@ -1,4 +1,4 @@
-import { Link as RouterLink, Outlet } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
 import logo from "../assets/img/PossapLogo.svg"
 
 const LogoOnlyLayout = ({size}) => {
